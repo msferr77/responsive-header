@@ -27,10 +27,10 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
+  color: #fff;
 }
 
 header h1 {
-  color: #fff;
   text-align: center;
   font-size: 2rem;
 }
@@ -53,6 +53,7 @@ nav a {
   padding: .5em .75em;
   color: #6c8fe0;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 nav a:hover {
@@ -80,6 +81,11 @@ nav a:hover {
 
 @media only screen and (min-width: 38em) {
 
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
   nav {
     flex-wrap: nowrap;
   }
@@ -96,6 +102,11 @@ nav a:hover {
 
 @media only screen and (min-width: 60em) {
 
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
   header {
     flex-direction: row;
   }
@@ -109,12 +120,20 @@ nav a:hover {
   nav {
     width: 50%;
     margin: .9rem;
-    padding: .3em 0 .5em
+    padding: .3em 0 .5em;
   }
 
   nav li {
     align-items: flex-end;
     padding-right: 0;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
   }
 
 }
